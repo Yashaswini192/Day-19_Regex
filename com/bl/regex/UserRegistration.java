@@ -17,6 +17,15 @@ public class UserRegistration {
 			System.out.println("invalid");
 		}
 
+		System.out.println("enter SecondName:");
+		String lastName = s.nextLine();
+
+		if(Pattern.matches("^[A-Z]{1}[a-z]{2,}", lastName)) {
+			System.out.println("valid");
+		}else {
+			System.out.println("invalid");
+		}
+
 	}
 
 }
