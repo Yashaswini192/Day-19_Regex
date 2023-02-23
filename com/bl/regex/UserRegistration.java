@@ -53,7 +53,7 @@ public class UserRegistration {
 		System.out.println("enter Password:");
 		String password = s.nextLine();
 		
-		if(Pattern.matches("([a-z?[A-Z]0-9{1}?[!@#$%^&*()-=_+,./<>:;{}()?|/]]{8})", password)) {
+		if(Pattern.matches("(\"^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$\")", password)) {
 			System.out.println("valid");
 		}else {
 			System.out.println("invalid");
