@@ -49,7 +49,15 @@ public class UserRegistration {
 			System.out.println("invalid");
 		}
 
-
+		//UC5-password
+		System.out.println("enter Password:");
+		String password = s.nextLine();
+		
+		if(Pattern.matches("[a-zA-Z0-9]{8}", password)) {
+			System.out.println("valid");
+		}else {
+			System.out.println("invalid");
+		}
 	}
 
 }
