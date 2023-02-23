@@ -8,6 +8,8 @@ public class UserRegistration {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner s = new Scanner(System.in);
+		
+		//UC1
 		System.out.println("Enter FirstName:");
 		String firstName = s.nextLine();
 
@@ -17,6 +19,7 @@ public class UserRegistration {
 			System.out.println("invalid");
 		}
 
+		//UC2
 		System.out.println("Enter SecondName:");
 		String lastName = s.nextLine();
 
@@ -26,6 +29,7 @@ public class UserRegistration {
 			System.out.println("invalid");
 		}
 		
+		//UC3
 		System.out.println("Enter Email:");
 		String email = s.nextLine();
 
@@ -34,6 +38,17 @@ public class UserRegistration {
 		}else {
 			System.out.println("invalid");
 		}
+		
+		//UC4
+		System.out.println("enter PhoneNumber:");
+		String phoneNumber = s.nextLine();
+		
+		if(Pattern.matches("^[0-91]{2}[\s]?[0-9]{10}", phoneNumber)) {
+			System.out.println("valid");
+		}else {
+			System.out.println("invalid");
+		}
+
 
 	}
 
