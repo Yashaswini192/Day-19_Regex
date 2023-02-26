@@ -33,7 +33,11 @@ public class UserRegistration {
 		System.out.println("Enter Email:");
 		String email = s.nextLine();
 
+<<<<<<< Updated upstream
 		if(Pattern.matches("^[A-z]+[a-zA-Z0-9]*[-._]?+[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$", email)){
+=======
+		if(Pattern.matches("^[A-z]+[a-zA-Z0-9]*[-._+/]?+[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$", email)){
+>>>>>>> Stashed changes
 			System.out.println("valid");
 		}else {
 			System.out.println("invalid");
@@ -43,7 +47,7 @@ public class UserRegistration {
 		System.out.println("enter PhoneNumber:");
 		String phoneNumber = s.nextLine();
 		
-		if(Pattern.matches("^[0-91]{2}[\s]?[0-9]{10}", phoneNumber)) {
+		if(Pattern.matches("^[0-91]{2}[\s]{1}[0-9]{10}$", phoneNumber)) {
 			System.out.println("valid");
 		}else {
 			System.out.println("invalid");
@@ -53,7 +57,11 @@ public class UserRegistration {
 		System.out.println("enter Password:");
 		String password = s.nextLine();
 		
+<<<<<<< Updated upstream
 		if(Pattern.matches("([a-z0-9[A-Z]{1}]{8})", password)) {
+=======
+		if(Pattern.matches("([a-z0-9[?=.*A-Z]{1}]{8})", password)) {
+>>>>>>> Stashed changes
 			System.out.println("valid");
 		}else {
 			System.out.println("invalid");
