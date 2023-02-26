@@ -33,7 +33,7 @@ public class UserRegistration {
 		System.out.println("Enter Email:");
 		String email = s.nextLine();
 
-		if(Pattern.matches("^[A-z]+[a-zA-Z0-9]*[-._]?+[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$", email)){
+		if(Pattern.matches("^[A-z]+[a-zA-Z0-9]*[-._+/]?+[a-zA-Z0-9]+[@]{1}[a-z0-9]+[.]{1}[a-z]+[.]?[a-z]+$", email)){
 			System.out.println("valid");
 		}else {
 			System.out.println("invalid");
